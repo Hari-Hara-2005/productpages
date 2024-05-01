@@ -180,9 +180,110 @@ const Navbar = () => {
                             <Link to='/'><li className="flex justify-center mt-5 hover:bg-[#FD5A2A] w-80 py-1.5 rounded-lg mx-auto hover:text-white" onClick={toggleMegaMenu}>
                                 About
                             </li></Link>
-                            <Link to='/Products'><li className="flex justify-center mt-5 hover:bg-[#FD5A2A] w-80 py-1.5 rounded-lg mx-auto hover:text-white" onClick={toggleMegaMenu}>
-                                Products
-                            </li></Link>
+                            <div>
+                                <ul class="text-[15px]">
+                                    <li className='my-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <FaSwatchbook className='w-5 h-5    text-[#FD5A2A]' />
+                                        <Link to='/AssetManagementSystem' className='mt-1' >Asset Management System</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <SiOctobercms className='w-5 h-5    text-[#FD5A2A]' />
+                                        <Link to='/CMS'>CMS</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <AiOutlineFileProtect className='w-5 h-5    text-[#FD5A2A]' />
+                                        <Link to='/CRM' >CRM</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]' >
+                                        <GiFactoryArm className='w-7 h-7 mt-2   text-[#FD5A2A]' />
+                                        <Link to='/Digital Manufacturing Excellence'>Digital Manufacturing Excellence</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <TbTruckDelivery className='w-5 h-5   text-[#FD5A2A]' />
+                                        <Link to='/Delivery Solution'>Delivery Solution</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <GiDigitalTrace className='w-5 h-5   text-[#FD5A2A]' />
+                                        <Link to='/Digital Twins'>Digital Twins</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <FiShoppingCart className='w-5 h-5   text-[#FD5A2A]' />
+                                        <Link to='/E-Commerce'>E-Commerce</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <FaBookReader className='w-5 h-5   text-[#FD5A2A]' />
+                                        <Link to='/ERP'>ERP</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <MdElectricalServices className='w-5 h-5   text-[#FD5A2A]' />
+                                        <Link to='/Energy Monitoring System'>Energy Monitoring System</Link>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="mt-3 text-[15px]">
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <GrMoney className='w-5 h-5   text-[#FD5A2A]' />
+                                        <Link to='/Finance And Payroll'>Finance and Accounting</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <BsFire className='w-5 h-5   text-[#FD5A2A]' />
+                                        <Link to='/Fire Compliance System'>Fire Compliance System</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <MdPersonSearch className='w-5 h-5   text-[#FD5A2A]' />
+                                        <Link to='/Hr and Payroll' >Hr and Payroll</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <CgSmartHomeWashMachine className='w-5 h-5   text-[#FD5A2A]' />
+                                        <Link to='/Machine Failure Prediction'>Machine Failure Prediction</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <MdPrecisionManufacturing className='w-7 h-7   text-[#FD5A2A]' />
+                                        <Link to='/Manufacturing Execution System'>Manufacturing Execution System</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <TbReportAnalytics className='w-7 h-7 mt-1.5  text-[#FD5A2A]' />
+                                        <Link to='/Manufacturing Analytics Software'>Manufacturing Analytics Software</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <TbDeviceDesktopAnalytics className='w-6 h-6 mt-1.5  text-[#FD5A2A]' />
+                                        <Link to='/Predictive Maintenance System'>Predictive Maintenance System</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <MdOutlineProductionQuantityLimits className='w-6 h-6 mt-1.5  text-[#FD5A2A]' />
+                                        <Link to='/Production Monitoring System'>Production Monitoring System</Link>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="mt-3 text-[15px]">
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <MdElectricalServices className='w-5 h-5   text-[#FD5A2A]' />
+                                        <Link to='/Energy Monitoring System'>Product Lifecycle Management</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <GrValidate className='w-5 h-5 mt-1.5 text-[#FD5A2A]' />
+                                        <Link to='/Quality Management Software'>Quality Management Software</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <TbCloudCog className='w-5 h-5  text-[#FD5A2A]' />
+                                        <Link to='/SaaS'>SaaS</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <RiHomeWifiFill className='w-5 h-5  text-[#FD5A2A]' />
+                                        <Link to='/Smart Home Automation'>Smart Home Automation</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <FiLink className='w-5 h-5  text-[#FD5A2A]' />
+                                        <Link to='/Supply Chain Management'>Supply Chain Management</Link>
+                                    </li>
+                                    <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
+                                        <MdOutlineSolarPower className='w-5 h-5 text-[#FD5A2A] ' />
+                                        <Link to='/Solar Monitoring'>Solar Monitoring System</Link>
+                                    </li>
+                                </ul>
+                            </div>
                             <Link to='/Contact-us'><li className="flex justify-center mt-5 hover:bg-[#FD5A2A] w-80 py-1.5 rounded-lg mx-auto hover:text-white" onClick={toggleMegaMenu}>
                                 Contact Us
                             </li></Link>
