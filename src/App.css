@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes customAnimation {
+    50% {
+      filter: hue-rotate(180deg);
+      background:linear-gradient(#6AA5FF,#5AD030) ;
+    }
+    75% {
+      filter: hue-rotate(250deg);
+      background:linear-gradient(#C4002F,#FA6775) ;
+    }
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.animated_card::before {
+    position: absolute;
+    content: '';
+    height: 395px;
+    width: 480px;
+    margin-left: -8.5px;
+    margin-top: -50.5px;
+    left: 0;
+    background: linear-gradient(#0088F0,#8857FE);
+    border-radius: 37px;
+    z-index: -10;
+    transition: 0.100s;
+    animation: customAnimation 15s linear infinite;
   }
+
+
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .swiper-slide:first-child {
+      transition: transform 100ms;
+    }
+  
+    .swiper-slide:first-child img {
+      transition: box-shadow 500ms;
+    }
+  
+    .swiper-slide.swiper-slide-active:first-child {
+      transform: translateX(50%);
+      z-index: 2;
+    }
+  
+    .swiper-slide.swiper-slide-active:first-child img {
+      box-shadow: 0px 32px 80px rgba(0, 0, 0, 0.35);
+    }
+  
+    .swiper-slide:nth-child(2) {
+      transition: transform 100ms;
+    }
+  
+    .swiper-slide.swiper-slide-next:nth-child(2) {
+      transform: translateX(55%);
+      z-index: 1;
+    }
+  
+    .swiper[dir="rtl"] .swiper-slide.swiper-slide-active:first-child {
+      transform: translateX(-50%);
+    }
+  
+    .swiper[dir="rtl"] .swiper-slide.swiper-slide-next:nth-child(2) {
+      transform: translateX(-55%);
+    }
+  }
+  .box{
+    height: 500px;
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    z-index: 1;
+}
+.box-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+ 
+
+}
+@keyframes spin {
   to {
-    transform: rotate(360deg);
+      transform: rotate(360deg);
   }
+}
+.animate-spin {
+  animation: spin 15s linear infinite;
 }
