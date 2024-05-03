@@ -76,23 +76,23 @@ const Navbar = () => {
                                                         </li>
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <TbTruckDelivery className='w-5 h-5   text-[#FD5A2A]' />
-                                                            <Link to='/DeliverySolution'>Delivery Solution</Link>
+                                                            <Link to='/DeliverySolution' onClick={scrollToTop}>Delivery Solution</Link>
                                                         </li>
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <GiDigitalTrace className='w-5 h-5   text-[#FD5A2A]' />
-                                                            <Link to='/DigitalTwins'>Digital Twins</Link>
+                                                            <Link to='/DigitalTwins' onClick={scrollToTop}>Digital Twins</Link>
                                                         </li>
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <FiShoppingCart className='w-5 h-5   text-[#FD5A2A]' />
-                                                            <Link to='/E-Commerce'>E-Commerce</Link>
+                                                            <Link to='/E-Commerce' onClick={scrollToTop}>E-Commerce</Link>
                                                         </li>
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <FaBookReader className='w-5 h-5   text-[#FD5A2A]' />
-                                                            <Link to='/ERP'>ERP</Link>
+                                                            <Link to='/ERP' onClick={scrollToTop}>ERP</Link>
                                                         </li>
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <MdElectricalServices className='w-5 h-5   text-[#FD5A2A]' />
-                                                            <Link to='/EnergyMonitoringSystem'>Energy Monitoring System</Link>
+                                                            <Link to='/EnergyMonitoringSystem' onClick={scrollToTop}>Energy Monitoring System</Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -100,35 +100,35 @@ const Navbar = () => {
                                                     <ul class="mt-3 text-[15px]">
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <GrMoney className='w-5 h-5   text-[#FD5A2A]' />
-                                                            <Link to='/FinanceAndPayroll'>Finance and Accounting</Link>
+                                                            <Link to='/FinanceAndPayroll' onClick={scrollToTop}>Finance and Accounting</Link>
                                                         </li>
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <BsFire className='w-5 h-5   text-[#FD5A2A]' />
-                                                            <Link to='/FireComplianceSystem'>Fire Compliance System</Link>
+                                                            <Link to='/FireComplianceSystem' onClick={scrollToTop}>Fire Compliance System</Link>
                                                         </li>
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <MdPersonSearch className='w-5 h-5   text-[#FD5A2A]' />
-                                                            <Link to='/HrandPayroll' >Hr and Payroll</Link>
+                                                            <Link to='/HrandPayroll' onClick={scrollToTop} >Hr and Payroll</Link>
                                                         </li>
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <CgSmartHomeWashMachine className='w-5 h-5   text-[#FD5A2A]' />
-                                                            <Link to='/MachineFailurePrediction'>Machine Failure Prediction</Link>
+                                                            <Link to='/MachineFailurePrediction' onClick={scrollToTop}>Machine Failure Prediction</Link>
                                                         </li>
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <MdPrecisionManufacturing className='w-7 h-7   text-[#FD5A2A]' />
-                                                            <Link to='/ManufacturingExecutionSystem'>Manufacturing Execution System</Link>
+                                                            <Link to='/ManufacturingExecutionSystem' onClick={scrollToTop}>Manufacturing Execution System</Link>
                                                         </li>
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <TbReportAnalytics className='w-7 h-7 mt-1.5  text-[#FD5A2A]' />
-                                                            <Link to='/ManufacturingAnalyticsSoftware'>Manufacturing Analytics Software</Link>
+                                                            <Link to='/ManufacturingAnalyticsSoftware' onClick={scrollToTop}>Manufacturing Analytics Software</Link>
                                                         </li>
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <TbDeviceDesktopAnalytics className='w-6 h-6 mt-1.5  text-[#FD5A2A]' />
-                                                            <Link to='/PredictiveMaintenanceSystem'>Predictive Maintenance System</Link>
+                                                            <Link to='/PredictiveMaintenanceSystem' onClick={scrollToTop}>Predictive Maintenance System</Link>
                                                         </li>
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <MdOutlineProductionQuantityLimits className='w-6 h-6 mt-1.5  text-[#FD5A2A]' />
-                                                            <Link to='/ProductionMonitoringSystem'>Production Monitoring System</Link>
+                                                            <Link to='/ProductionMonitoringSystem' onClick={scrollToTop}>Production Monitoring System</Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -136,27 +136,27 @@ const Navbar = () => {
                                                     <ul class="mt-3 text-[15px]">
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <MdElectricalServices className='w-5 h-5   text-[#FD5A2A]' />
-                                                            <Link to='/ProductLifecycleManagement'>Product Lifecycle Management</Link>
+                                                            <Link to='/ProductLifecycleManagement' onClick={scrollToTop}>Product Lifecycle Management</Link>
                                                         </li>
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <GrValidate className='w-5 h-5 mt-1.5 text-[#FD5A2A]' />
-                                                            <Link to='/QualityManagementSoftware'>Quality Management Software</Link>
+                                                            <Link to='/QualityManagementSoftware' onClick={scrollToTop}>Quality Management Software</Link>
                                                         </li>
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <TbCloudCog className='w-5 h-5  text-[#FD5A2A]' />
-                                                            <Link to='/SaaS'>SaaS</Link>
+                                                            <Link to='/SaaS' onClick={scrollToTop}>SaaS</Link>
                                                         </li>
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <RiHomeWifiFill className='w-5 h-5  text-[#FD5A2A]' />
-                                                            <Link to='/SmartHomeAutomation'>Smart Home Automation</Link>
+                                                            <Link to='/SmartHomeAutomation' onClick={scrollToTop}>Smart Home Automation</Link>
                                                         </li>
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <FiLink className='w-5 h-5  text-[#FD5A2A]' />
-                                                            <Link to='/SupplyChainManagement'>Supply Chain Management</Link>
+                                                            <Link to='/SupplyChainManagement' onClick={scrollToTop}>Supply Chain Management</Link>
                                                         </li>
                                                         <li className='py-3 flex gap-2  hover:text-[#FD5A2A]'>
                                                             <MdOutlineSolarPower className='w-5 h-5 text-[#FD5A2A] ' />
-                                                            <Link to='/SolarMonitoring'>Solar Monitoring System</Link>
+                                                            <Link to='/SolarMonitoring' onClick={scrollToTop}>Solar Monitoring System</Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -183,7 +183,7 @@ const Navbar = () => {
                             <Link to='/'><li className="flex justify-center mt-5 hover:bg-[#FD5A2A] w-80 py-1.5 rounded-lg mx-auto hover:text-white" onClick={toggleMegaMenu}>
                                 About
                             </li></Link>
-                            <div>
+                            {/* <div>
                                 <ul class="text-[15px]">
                                     <li className='my-3 flex gap-2  hover:text-[#FD5A2A]'>
                                         <FaSwatchbook className='w-5 h-5    text-[#FD5A2A]' />
@@ -286,7 +286,7 @@ const Navbar = () => {
                                         <Link to='/Solar Monitoring'>Solar Monitoring System</Link>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>*/}
                             <Link to='/Contact-us'><li className="flex justify-center mt-5 hover:bg-[#FD5A2A] w-80 py-1.5 rounded-lg mx-auto hover:text-white" onClick={toggleMegaMenu}>
                                 Contact Us
                             </li></Link>
