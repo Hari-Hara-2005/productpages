@@ -24,6 +24,7 @@ import Hero from './Hero';
 import Product from './Product';
 import Manufacturing_Execution_System from './Pages/Manufacturing Execution System (MES)';
 import Manufacturing_Analytics_Software from './Pages/Manufacturing Analytics Software';
+import Product_Lifecycle_Management from './Pages/Product Lifecycle Management (PLM)';
 function App() {
   return (
     <BrowserRouter>
@@ -33,26 +34,27 @@ function App() {
         <Route path='/AssetManagementSystem' element={<Asset_Management_System />} />
         <Route path='/CMS' element={<CMS />} />
         <Route path='/CRM' element={<CRM />} />
-        <Route path='/Delivery Solution' element={<Delivery_Solution />} />
-        <Route path='/Digital Manufacturing Excellence' element={< Digital_Manufacturing_Excellence />} />
-        <Route path='/Digital Twins' element={< Digital_Twins />} />
+        <Route path='/DeliverySolution' element={<Delivery_Solution />} />
+        <Route path='/DigitalManufacturingExcellence' element={< Digital_Manufacturing_Excellence />} />
+        <Route path='/DigitalTwins' element={< Digital_Twins />} />
         <Route path='/E-Commerce' element={< E_Commerce />} />
         <Route path='/ERP' element={<ERP />} />
-        <Route path='/Energy Monitoring System' element={<Energy_Monitoring_System />} />
-        <Route path='/Finance And Payroll' element={<Finance_And_Payroll />} />
-        <Route path='/Fire Compliance System' element={<Fire_Compliance_System />} />
-        <Route path='/Hr and Payroll' element={<Hr_and_Payroll />} />
-        <Route path='/Machine Failure Prediction' element={<Machine_Failure_Prediction />} />
-        <Route path='/Manufacturing Execution System' element={<Manufacturing_Execution_System />} />
-        <Route path='/Manufacturing Analytics Software' element={<Manufacturing_Analytics_Software />} />
+        <Route path='/EnergyMonitoringSystem' element={<Energy_Monitoring_System />} />
+        <Route path='/FinanceAndPayroll' element={<Finance_And_Payroll />} />
+        <Route path='/FireComplianceSystem' element={<Fire_Compliance_System />} />
+        <Route path='/HrandPayroll' element={<Hr_and_Payroll />} />
+        <Route path='/MachineFailurePrediction' element={<Machine_Failure_Prediction />} />
+        <Route path='/ManufacturingExecutionSystem' element={<Manufacturing_Execution_System />} />
+        <Route path='/ManufacturingAnalyticsSoftware' element={<Manufacturing_Analytics_Software />} />
         <Route path='/CRM' element={<CRM />} />
-        <Route path='/Predictive Maintenance System' element={<Predictive_Maintenance_System />} />
-        <Route path='/Production Monitoring System' element={< Production_Monitoring_System />} />
-        <Route path='/Quality Management Software' element={<Quality_Management_Software />} />
+        <Route path='/PredictiveMaintenanceSystem' element={<Predictive_Maintenance_System />} />
+        <Route path='/ProductionMonitoringSystem' element={< Production_Monitoring_System />} />
+        <Route path='/ProductLifecycleManagement' element={<Product_Lifecycle_Management />} />
+        <Route path='/QualityManagementSoftware' element={<Quality_Management_Software />} />
         <Route path='/SaaS' element={<SaaS />} />
-        <Route path='/Smart Home Automation' element={<Smart_Home_Automation />} />
-        <Route path='/Solar Monitoring' element={<Solar_Monitoring />} />
-        <Route path='/Supply Chain Management' element={<Supply_Chain_Management />} />
+        <Route path='/SmartHomeAutomation' element={<Smart_Home_Automation />} />
+        <Route path='/SolarMonitoring' element={<Solar_Monitoring />} />
+        <Route path='/SupplyChainManagement' element={<Supply_Chain_Management />} />
       </Routes>
     </BrowserRouter >
   );
